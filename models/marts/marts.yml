@@ -1,0 +1,18 @@
+version: 2
+
+models:
+
+    - name: orders
+      description: orders model.
+      columns:
+        - name: order_id
+          tests:
+            - unique
+            - not_null
+    - name: customers
+      description: One row per customer id
+      columns:
+        - name: customer_id
+          tests:
+            - unique
+            - not_null
